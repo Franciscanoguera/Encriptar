@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>ENCRIPTADOR</title>
+  <script async type="text/javascript" src="./scripts/code.js"></script>
+
+</head>
+
+<body>
+
+
+  <h2 class="titulo">Palabra secreta</h2>
+  <div class="cajas">
+    <section class="form box">
+
+      <form action="">
+        <label for="input-texto">Mensaje a Encriptar / Desencriptar :</label>
+
+
+        <input class="input-text" type="text" name="input-text" id="input-text" onkeypress="return check(event)"
+          placeholder="Ingrese el texto que desea encriptar">
+
+        <button type="button" onclick="encriptador()" class="btn-encrip">Encriptar</button>
+        <button type="button" onclick="desencriptar()" class="btn-desencrip">Desencriptar</button>
+
+      </form>
+    </section>
+
+
+    <section class="msg box">
+      <label id="">Mensaje encriptado:</label>
+
+      <input class="input-text" type="text" id="msg" onkeypress="return check(event)" style="overflow: hidden;" />
+
+      <input class="btn-copy" type="image" src="./images/copiar.png" width="36" height="36" value="Copiar" id="btn-copy"
+        onclick="copiar()" title="Copiar texto" />
+
+      <input class="btn-borrar" type="image" src="./images/borra.png" width="36" height="36" value="Borrar"
+        id="btn-borrar" onclick="borrar()" title="Borrar textos" />
+
+
+    </section>
+  </div>
+  <h4 class="texto-bajo">Recuerde ingresar solo letras minúsculas sin acentos.<br></br>No se permite el uso de
+    caracteres especiales y números</h4>
+
+  <div class="texto">
+    <p>Todos los derechos reservados ©2022 Desarrollado por: Francisca Noguera</p>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
